@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 4966002 */
+    src: url('//at.alicdn.com/t/c/font_4966002_y1f5xa3fv1n.woff2?t=1751533827484') format('woff2'),
+        url('//at.alicdn.com/t/c/font_4966002_y1f5xa3fv1n.woff?t=1751533827484') format('woff'),
+        url('//at.alicdn.com/t/c/font_4966002_y1f5xa3fv1n.ttf?t=1751533827484') format('truetype');
+  }
+
+  .iconfont {
+    padding: 0 5px;
+    font-family: "iconfont" !important;
+    font-size: 45px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-weiwancheng:before {
+    content: "\e663";
+  }
+
+  .icon-wancheng:before {
+    content: "\e63c";
+  }
+  #app {
+    margin: 0 auto;
+  }
+  #app .content {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  #app .title {
+    font-size: 45px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+  }
+  #app .search {
+    position: relative;
+    width: 700px;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  #app .content .search .search-bar {
+    color: brown;
+    box-sizing: border-box;
+    background-color: rgb(238, 216, 216);
+    margin: 0;
+    padding-left: 35px;
+    width: 700px;
+    height: 100%;
+    outline: none;
+    border: 0;
+    font-size: 28px;
+    border-radius: 15px;
+    transition: 1s;
+  }
+  #app .content .search::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    border-left: 12px solid brown;
+
+}
+  #app .content .search .search-bar:focus {
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.4);
+    transition: 1s;
+  }
+  #app .list-content {
+    margin-top: 20px;
+  }
+  #app .list {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.4);
+    border-radius: 10px;
+  }
+  .list .item {
+    position: relative;
+    list-style: none;
+  }
+  .list .item .view {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 93%;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中 */
+    gap: 18px; /* 图标和文字间距 */
+    height: 60px; /* 设置行高 */
+    font-size: 25px;
+    line-height: 60px;
+    cursor: pointer;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  .list .item .view i.iconfont {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .list .item .view:hover .delete {
+    display: inline;
+  }
+  .list .item .view i.delete {
+    position: absolute;
+    display: none;
+    right: 30px;
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .list .item input.edit {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 88%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 25px;
+  }
+  .list .item.editing .edit {
+    display: block;
+  }
+  #app .footer {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  #app .footer a {
+    transition: all 1s ease;
+    font-size: 18px;
+    color: #ccc;
+  }
+  #app .footer .choose {
+    display: flex;
+    justify-content: space-around;
+  }
+  #app .footer .choose a.choosed {
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+  #app .footer .choose a:hover {
+    border: 1px solid #bbb;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
